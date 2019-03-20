@@ -27,6 +27,7 @@ export default {
   ** Global CSS
   */
   css: [
+    { src: '~/assets/css/main.scss', lang: 'scss' }
   ],
 
   /*
@@ -39,8 +40,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
     '@nuxtjs/pwa'
   ],
 

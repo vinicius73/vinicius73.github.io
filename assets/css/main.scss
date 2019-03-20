@@ -1,0 +1,13 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+$blue: #002136;
+$body-background-color: $blue;
+$body-color: $white;
+
+@import '~bulma';
+
+body, html {
+  min-width: 100%;
+  min-height: 100%;
+}
