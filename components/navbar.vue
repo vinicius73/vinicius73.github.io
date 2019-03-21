@@ -14,9 +14,9 @@
 
     <div class="navbar-menu" :class="{ 'is-active': showMenu }">
       <div class="navbar-start">
-        <!-- <a class="navbar-item">
-          Documentation
-        </a> -->
+        <nuxt-link to="/projects" class="navbar-item">
+          Projects
+        </nuxt-link>
       </div>
 
       <div class="navbar-end">
