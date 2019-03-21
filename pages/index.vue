@@ -37,6 +37,11 @@ import SocialLinks from '~/components/social-links'
 import MiniBio from '~/components/mini-bio'
 
 export default {
+  name: 'Index',
+  head: {
+    title: 'Vinicius Reis',
+    titleTemplate: '%s - Severino Full-Stack Developer 🤓'
+  },
   components: { SocialLinks, MiniBio }
 }
 </script>
