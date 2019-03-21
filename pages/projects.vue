@@ -27,7 +27,7 @@ const projects = [{
   name: '@blocker/steem-api',
   image: '/images/projects/steem-js-api.png',
   description: 'Modern and lightweight JavaScript library to consume the Steem API.',
-  href: 'https://github.com/artesaos/seotools',
+  href: 'https://github.com/blocker-solutions/steem-js/tree/master/packages/api',
   tags: ['JavaScript', 'Ava.js', 'Blockchain', 'Steemit', 'NPM', 'JS Package']
 }, {
   name: 'Codecasts',
@@ -57,7 +57,7 @@ const projects = [{
   name: 'Awesome BR',
   image: '/images/projects/awesome-br.png',
   description: 'A collection of useful links in portuguese for various projects and technologies.',
-  href: 'http://awesome-br.com/#/',
+  href: 'http://awesome-br.com/',
   tags: ['Angular.js']
 }]
 
