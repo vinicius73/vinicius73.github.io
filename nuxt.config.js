@@ -10,7 +10,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Severino Full-Stack Developer 🤓' },
-      { hid: 'og:description', name: 'og:description', content: 'Severino Full-Stack Developer 🤓' }
+      { hid: 'og:description', name: 'og:description', content: 'Severino Full-Stack Developer 🤓' },
+      { hid: 'og:title', name: 'og:title', content: 'Vinicius Reis' }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.7.2/css/brands.css' },
