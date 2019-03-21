@@ -15,7 +15,7 @@
                   Vinicius Reis
                 </h1>
                 <h2 class="subtitle">
-                  Severivo Full-Stack Developer 🤓
+                  Severino Full-Stack Developer 🤓
                 </h2>
 
                 <MiniBio />

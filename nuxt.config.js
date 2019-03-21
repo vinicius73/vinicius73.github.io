@@ -7,11 +7,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Vinicius Reis',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'Severino Full-Stack Developer 🤓' }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.7.2/css/brands.css' },
@@ -56,6 +56,7 @@ export default {
         }
       }
     },
+    extractCSS: true,
     /*
     ** You can extend webpack config here
     */
