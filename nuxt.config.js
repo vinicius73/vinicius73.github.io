@@ -11,8 +11,8 @@ export default {
       { hid: 'og:title', name: 'og:title', content: 'Vinicius Reis' }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.7.2/css/brands.css' },
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css' },
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.8.0/css/brands.css' },
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.8.0/css/all.css' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
