@@ -39,8 +39,14 @@ const Github = buildSocialLink({
 
 const Playstation = buildSocialLink({
   href: 'https://psnprofiles.com/luizvinicius73',
-  title: 'Play with on PSN',
+  title: 'Play with me on PSN',
   icon: 'fab fa-playstation'
 })
 
-export { Medium, Twitter, Linkedin, Github, Playstation }
+const SpeakerDeck = buildSocialLink({
+  href: 'https://speakerdeck.com/vinicius73',
+  title: 'See my slides',
+  icon: 'fab fa-speaker-deck'
+})
+
+export { Medium, Twitter, Linkedin, Github, SpeakerDeck, Playstation }

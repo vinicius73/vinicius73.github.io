@@ -1,7 +1,8 @@
 <template>
   <nav class="navbar is-link is-spaced" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
+      <a class="navbar-item has-text-primary" href="/">
+        <span class="icon"><i class="fas fa-fire" /></span>
         <strong>Vinicius Reis</strong>
       </a>
 
@@ -15,8 +16,12 @@
     <div class="navbar-menu" :class="{ 'is-active': showMenu }">
       <div class="navbar-start">
         <nuxt-link to="/projects" class="navbar-item">
-          Projects
+          <span class="icon"><i class="fas fa-code" /></span>
+          <span>Projects</span>
         </nuxt-link>
+        <SpeakerDeck navbar>
+          Speaker Deck
+        </SpeakerDeck>
       </div>
 
       <div class="navbar-end">
@@ -24,9 +29,7 @@
           <div class="buttons">
             <Github type="link" />
             <Twitter type="link" />
-            <Medium type="light">
-              Blog
-            </Medium>
+            <Medium type="link" />
           </div>
         </div>
       </div>
@@ -35,11 +38,11 @@
 </template>
 
 <script>
-import { Medium, Twitter, Github } from './social'
+import { Medium, Twitter, Github, SpeakerDeck } from './social'
 
 export default {
   name: 'Navbar',
-  components: { Medium, Twitter, Github },
+  components: { Medium, Twitter, Github, SpeakerDeck },
   data: () => ({
     showMenu: false
   }),
