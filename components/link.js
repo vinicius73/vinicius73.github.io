@@ -1,9 +1,3 @@
-// <a target="_blank" :href="href" class="button is-link" title="follow me on Twitter">
-//   <span class="icon">
-//     <i class="fab fa-twitter"></i>
-//   </span>
-// </a>
-
 const makeIcon = (h, icon) => {
   return h('span', { staticClass: 'icon' }, [
     h('i', { staticClass: icon })
@@ -14,6 +8,10 @@ export default {
   functional: true,
   props: {
     icon: String,
+    navbar: {
+      type: Boolean,
+      default: false
+    },
     target: {
       type: String,
       default: '_blank'
@@ -38,7 +36,7 @@ export default {
     return h('a', {
       ...data,
       attrs,
-      staticClass: `button is-${props.type}`
+      staticClass: props.navbar ? 'navbar-item' : `button is-${props.type}`
     }, content)
   }
 }
