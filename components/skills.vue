@@ -6,9 +6,12 @@
     <div class="column is-auto">
       <div class="card">
         <header class="cart-header">
+          <span class="icon close" @click="$emit('close')">
+            <i class="fas fa-times-circle" />
+          </span>
           <h4 class="card-header-title">
             <span class="icon">
-              <i class="fas fa-user-astronaut" aria-hidden="true" />
+              <i class="fas fa-user-astronaut" />
             </span>
             Just give me a challenger!
           </h4>
@@ -91,5 +94,11 @@ progress[value]::-webkit-progress-value {
 }
 .sidebar-skills:hover {
   background: rgba(255, 255, 255, 0.20);
+}
+
+.close {
+  cursor: pointer;
+  padding: 1em;
+  float: right;
 }
 </style>
