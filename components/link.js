@@ -6,6 +6,7 @@ const makeIcon = (h, icon) => {
 
 export default {
   functional: true,
+  name: 'Link',
   props: {
     icon: String,
     navbar: {
