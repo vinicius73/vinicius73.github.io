@@ -66,7 +66,7 @@ export default {
   mounted() {
     this.$interval = setInterval(() => {
       this.random()
-    }, 4000)
+    }, 2500)
   },
   beforeDestroy() {
     clearInterval(this.$interval)
