@@ -2,7 +2,7 @@ import * as Links from './social'
 
 export default {
   name: 'SocialLinks',
-  render(h) {
+  render (h) {
     const content = Object.values(Links).map((component) => {
       return h('div', { staticClass: 'control' }, [h(component)])
     })

@@ -22,7 +22,7 @@ export default {
       default: 'link'
     }
   },
-  render(h, context) {
+  render (h, context) {
     const { children, props, data } = context
     const attrs = { ...data.attrs, target: props.target }
 

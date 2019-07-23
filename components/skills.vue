@@ -63,16 +63,16 @@ export default {
   data: () => ({
     skils: [...skils]
   }),
-  mounted() {
+  mounted () {
     this.$interval = setInterval(() => {
       this.random()
     }, 2500)
   },
-  beforeDestroy() {
+  beforeDestroy () {
     clearInterval(this.$interval)
   },
   methods: {
-    random() {
+    random () {
       this.skils = this.skils.map(([ key ]) => {
         return [key, randomInt()]
       })

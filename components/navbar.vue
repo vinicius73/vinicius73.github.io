@@ -47,7 +47,7 @@ export default {
     showMenu: false
   }),
   methods: {
-    toggleMenu() {
+    toggleMenu () {
       this.showMenu = !this.showMenu
     }
   }

@@ -27,7 +27,7 @@ export default {
   data: () => ({
     showSkills: false
   }),
-  mounted() {
+  mounted () {
     setTimeout(() => {
       this.showSkills = true
     }, 3000)

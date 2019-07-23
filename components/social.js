@@ -3,7 +3,7 @@ import Link from './link'
 const buildSocialLink = props => ({
   name: 'SocialLink' + (props.name) ? props.name : '',
   functional: true,
-  render(h, { data, children }) {
+  render (h, { data, children }) {
     return h(Link, {
       ...data,
       attrs: {
