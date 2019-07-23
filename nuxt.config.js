@@ -8,7 +8,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Severino Full-Stack Developer 🤓' },
       { hid: 'og:description', name: 'og:description', content: 'Severino Full-Stack Developer 🤓' },
-      { hid: 'og:title', name: 'og:title', content: 'Vinicius Reis' }
+      { hid: 'og:title', name: 'og:title', content: 'Vinicius Reis' },
+      { hid: 'og:image', name: 'og:image', content: 'https://gravatar.com/avatar/f803c45d62a468e0cb990398c004bd3e?s=400&d=robohash&r=x' }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.8.0/css/brands.css' },
