@@ -1,8 +1,17 @@
-# vinicius73.github.io
+# vinicius73.dev
 
 > My personal page
 
-## Build Setup
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c72bf386-9dd2-4cab-aa0e-3f7a8545b6ec/deploy-status)](https://app.netlify.com/sites/vinicius73/deploys)
+
+## Make with
+
+- [Vue.js](https://vuejs.org)
+- [Nuxt.js](https://nuxtjs.org)
+- [Bulma CSS](https://bulma.io/)
+
+
+## Setup and Build
 
 ``` bash
 # install dependencies
