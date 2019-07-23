@@ -1,10 +1,10 @@
 <template>
   <nav class="navbar is-link is-spaced" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item has-text-primary" href="/">
+      <nuxt-link exact to="/" class="navbar-item has-text-primary">
         <span class="icon"><i class="fas fa-fire" /></span>
         <strong>Vinicius Reis</strong>
-      </a>
+      </nuxt-link>
 
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" @click="toggleMenu">
         <span aria-hidden="true" />
