@@ -73,7 +73,7 @@ export default {
   },
   methods: {
     random () {
-      this.skils = this.skils.map(([ key ]) => {
+      this.skils = this.skils.map(([key]) => {
         return [key, randomInt()]
       })
     }
