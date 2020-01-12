@@ -18,6 +18,12 @@ const projects = [{
   href: 'https://vue-pokemon-memory-game.vinicius73.dev/',
   tags: ['Vue.js', 'Vuex', 'Bulma.css', 'PWA', 'Mobile']
 }, {
+  name: 'JsonLogic Playground',
+  image: '/images/projects/jsonlogic-playground.png',
+  description: 'A simple JsonLogic tester.',
+  href: 'https://github.com/vinicius73/jsonlogic-playground',
+  tags: ['Vue.js', 'PWA', 'Bulma CSS']
+}, {
   name: 'Avatar URL Generator',
   image: '/images/projects/avatar-url-generator.png',
   description: 'An avatar URL generator that provides multiple options and online avatar providers: Gravatar, RoboHash, Adorable and DiceBear',
