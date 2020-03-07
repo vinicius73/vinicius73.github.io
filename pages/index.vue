@@ -14,9 +14,11 @@ import Profile from '~/components/profile.vue'
 export default {
   name: 'Index',
   components: { Profile },
-  head: {
-    title: 'Vinicius Reis',
-    titleTemplate: '%s - Severino Full-Stack Developer 🤓'
+  head () {
+    return {
+      title: 'Vinicius Reis',
+      titleTemplate: '%s - Severino Full-Stack Developer 🤓'
+    }
   }
 }
 </script>

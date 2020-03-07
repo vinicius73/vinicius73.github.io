@@ -71,12 +71,14 @@ export default {
   name: 'Projects',
   projects,
   components: { ProjectCard },
-  head: {
-    title: 'Projects',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Projects created by me, maintained by me, or with my participation. 🧟' },
-      { hid: 'og:description', name: 'og:description', content: 'Projects created by me, maintained by me, or with my participation. 🧟' }
-    ]
+  head () {
+    return {
+      title: 'Projects',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Projects created by me, maintained by me, or with my participation. 🧟' },
+        { hid: 'og:description', name: 'og:description', content: 'Projects created by me, maintained by me, or with my participation. 🧟' }
+      ]
+    }
   }
 }
 </script>
