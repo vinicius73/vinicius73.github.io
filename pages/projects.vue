@@ -12,11 +12,23 @@
 import ProjectCard from '~/components/project-card'
 
 const projects = [{
+  name: 'Wi-Fi QR Code Generator',
+  image: '/images/projects/vue-wi-fi-qr-code.png',
+  description: 'An application to share your Wi-Fi Network with your guests!',
+  href: 'https://vue-wifi-qrcode-generator.surge.sh/',
+  tags: ['Vue.js v3', 'Tailwind', 'Vite']
+}, {
+  name: 'Pokémon Match',
+  image: '/images/projects/pokemon-match.png',
+  description: 'A small collection of match games for kids and Pokémon\'s lovers. Enjoy!',
+  href: 'https://pokemon-match.vinicius73.dev/',
+  tags: ['Vue.js', 'Game', 'PWA', 'Mobile', 'Vuetify.js']
+}, {
   name: 'Pokémon Memory Game',
   image: '/images/projects/pokemon-memory-game.png',
   description: 'A memory game where you are challenged to capture pokémon. It works offline, perfect play on your mobile devices.',
   href: 'https://vue-pokemon-memory-game.vinicius73.dev/',
-  tags: ['Vue.js', 'Vuex', 'Bulma.css', 'PWA', 'Mobile']
+  tags: ['Vue.js', 'Vuex', 'Bulma.css', 'PWA', 'Mobile', 'Game']
 }, {
   name: 'JsonLogic Playground',
   image: '/images/projects/jsonlogic-playground.png',
