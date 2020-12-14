@@ -1,5 +1,4 @@
 export default {
-  mode: 'universal',
   head: {
     title: 'Vinicius Reis',
     titleTemplate: '%s - Vinicius Reis',
