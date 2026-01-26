@@ -1,44 +1,14 @@
 {
-  "name": "vinicius73.dev",
-  "version": "1.2.3",
-  "description": "My personal page",
-  "author": "Vinicius Reis",
-  "private": true,
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
-    "test": "jest"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@nuxtjs/pwa": "^3.3.3",
-    "bulma": "^0.9.1",
-    "cross-env": "^7.0.3",
-    "nuxt": "^2.17.1"
+    "astro": "^5.16.15"
   },
-  "devDependencies": {
-    "@nuxtjs/eslint-config": "^5.0.0",
-    "@vue/test-utils": "^1.1.2",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.6.3",
-    "eslint": "^7.16.0",
-    "eslint-config-standard": ">=16.0.2",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-import": ">=2.22.1",
-    "eslint-plugin-jest": ">=24.1.3",
-    "eslint-plugin-node": ">=11.1.0",
-    "eslint-plugin-nuxt": ">=2.0.0",
-    "eslint-plugin-promise": ">=4.2.1",
-    "eslint-plugin-standard": ">=5.0.0",
-    "eslint-plugin-vue": "^7.4.0",
-    "jest": "^26.6.3",
-    "node-sass": "^6.0.1",
-    "nodemon": "^2.0.6",
-    "sass-loader": "^10.1.0",
-    "vue-jest": "^3.0.7"
-  }
+  "packageManager": "yarn@4.12.0"
 }
