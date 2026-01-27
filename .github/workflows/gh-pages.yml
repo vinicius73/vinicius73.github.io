@@ -9,7 +9,9 @@ jobs:
         concurrency:
             group: ${{ github.workflow }}-${{ github.ref }}
         permissions:
-            contents: write
+            contents: read
+            pages: write
+            id-token: write
         steps:
             - name: Checkout 🛎️
               uses: actions/checkout@v6
@@ -27,5 +29,5 @@ jobs:
             - name: Build and Deploy 🚀
               uses: peaceiris/actions-gh-pages@v4
               with:
-                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: ./dist
