@@ -1,0 +1,10 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://vinicius73.com.br/* https://vinicius73.dev/:splat 301!
+https://www.vinicius73.com.br/* https://vinicius73.dev/:splat 301!
+https://luizvinicius.com.br/* https://vinicius73.dev/:splat 301!
+https://www.luizvinicius.com.br/* https://vinicius73.dev/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://vinicius73.netlify.com/* https://vinicius73.dev/:splat 301!
