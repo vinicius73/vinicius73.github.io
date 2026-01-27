@@ -1,0 +1,26 @@
+---
+import { projects } from "../../data/projects";
+---
+
+<section>
+  <h1 class="text-2xl font-semibold tracking-tight">Projects</h1>
+  <p class="section-text mt-2"></p>
+  <ul class="section-list section-list-loose mt-6">
+    {
+      projects.map((project) => (
+        <li class="section-list-item section-list-item-md ">
+          <a
+            href={project.href}
+            target="_blank"
+            rel="noreferrer"
+            class="item-title link-accent"
+          >
+            {project.name}
+          </a>
+          <p class="section-text mt-1">{project.description}</p>
+          <p class="item-meta mt-1">{project.tags.join(" • ")}</p>
+        </li>
+      ))
+    }
+  </ul>
+</section>

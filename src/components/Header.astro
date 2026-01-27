@@ -1,0 +1,94 @@
+---
+import GithubIcon from "./icons/github.astro";
+import SpeakerDeckIcon from "./icons/speaker-deck.astro";
+import CodeTwotoneIcon from "./icons/code-twotone.astro";
+import TwitterIcon from "./icons/twitter.astro";
+import LinkedinIcon from "./icons/linkedin.astro";
+
+const links = [
+  { label: "Projects", href: "/projects" },
+  {
+    label: "GitHub",
+    href: "https://github.com/vinicius73",
+    external: true,
+    icon: GithubIcon,
+    iconOnly: true,
+  },
+  {
+    label: "Twitter",
+    href: "https://x.com/LuizVinicius·73",
+    external: true,
+    icon: TwitterIcon,
+    iconOnly: true,
+  },
+  {
+    label: "Speaker Deck",
+    href: "https://speakerdeck.com/vinicius73",
+    external: true,
+    icon: SpeakerDeckIcon,
+    iconOnly: true,
+  },
+  {
+    label: "LinkedIn",
+    href: "http://linkedin.com/in/luizvinicius73",
+    external: true,
+    icon: LinkedinIcon,
+    iconOnly: true,
+  },
+];
+---
+
+<header class="header-layout">
+  <div class="header-bar">
+    <div class="header-name">
+      <a href="/" class="header-name-link inline-flex items-center gap-2">
+        <CodeTwotoneIcon
+          class="icon-blink h-6 w-6 text-accent"
+          style="--icon-blink-duration: 17s;"
+          aria-hidden="true"
+          focusable="false"
+        />
+        Vinicius Reis
+      </a>
+    </div>
+    <label
+      for="nav-toggle"
+      class="nav-toggle sm:hidden"
+      aria-label="Toggle navigation"
+    >
+      <span class="sr-only">Toggle navigation</span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </label>
+  </div>
+  <input id="nav-toggle" type="checkbox" class="sr-only peer" />
+  <nav
+    class="nav-links nav-links-collapsible peer-checked:flex sm:flex sm:flex-row sm:items-center sm:border-0 sm:pt-0"
+  >
+    {
+      links.map((link) => {
+        const Icon = link.icon;
+
+        const isIconOnly = Boolean(link.iconOnly && Icon);
+        const iconClass = isIconOnly ? "h-6 w-6" : "h-5 w-5";
+
+        return (
+          <a
+            href={link.href}
+            target={link.external ? "_blank" : undefined}
+            rel={link.external ? "noreferrer" : undefined}
+            class="nav-link inline-flex items-center gap-2"
+          >
+            {Icon ? (
+              <Icon class={iconClass} aria-hidden="true" focusable="false" />
+            ) : null}
+            <span class={isIconOnly ? "sm:sr-only" : undefined}>
+              {link.label}
+            </span>
+          </a>
+        );
+      })
+    }
+  </nav>
+</header>
