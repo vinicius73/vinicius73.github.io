@@ -9,7 +9,7 @@ jobs:
         concurrency:
             group: ${{ github.workflow }}-${{ github.ref }}
         permissions:
-            contents: read
+            contents: write
             pages: write
             id-token: write
         steps:
@@ -28,6 +28,7 @@ jobs:
 
             - name: Build and Deploy 🚀
               uses: peaceiris/actions-gh-pages@v4
+              if: github.ref == 'refs/heads/master'
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: ./dist
